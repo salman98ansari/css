@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" 
     crossorigin="anonymous">
     <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
+    <link rel="stylesheet" href="style.css">
+
     <title>Practise</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3
+    fixed-top">
         <div class="container">
             <a href="#" class="navbar-brand">Frontend</a>
             <button class="navbar-toggler" type="button"
@@ -188,9 +194,212 @@
 
     <!--  Question Accordian -->
 
+    <section id="questions" class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">
+                Frequently Asked Questions
+            </h2>
+            <div class="accordion accordion-flush" id="questions">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" >
+                      Want to know More ?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" >
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#questions">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" >
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#questions">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Card sections -->
+
+    <section id="instructors" class="p-5 bg-primary">
+        <div class="container">
+            <h2 class="text-center text-white">
+                Our Instructors
+            </h2>
+            <p class="lead text-center text-white mb-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolorum eaque quas necessitatibus, iusto vel, error facilis praesentium perspiciatis, nostrum et debitis. Q
+                uas id officiis maxime similique accusamus, neque animi!
+            </p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/11.jpg" 
+                            class="rounded-circle mb-3" alt="">
+                        <h3 class="card-title mb-3">
+                            John Doe
+                        </h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Nam cupiditate assumenda aliquid asperiores accusantium explicabo, autem dignissimos eos dolores incidunt? 
+                            Rerum rem quos numquam, quisquam nihil optio aperiam facere molestiae?
+                        </p>
+                        <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/11.jpg" 
+                            class="rounded-circle mb-3" alt="">
+                        <h3 class="card-title mb-3">
+                            John Doe
+                        </h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Nam cupiditate assumenda aliquid asperiores accusantium explicabo, autem dignissimos eos dolores incidunt? 
+                            Rerum rem quos numquam, quisquam nihil optio aperiam facere molestiae?
+                        </p>
+                        <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/15.jpg" 
+                            class="rounded-circle mb-3" alt="">
+                        <h3 class="card-title mb-3">
+                            John Doe
+                        </h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Nam cupiditate assumenda aliquid asperiores accusantium explicabo, autem dignissimos eos dolores incidunt? 
+                            Rerum rem quos numquam, quisquam nihil optio aperiam facere molestiae?
+                        </p>
+                        <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/10.jpg" 
+                            class="rounded-circle mb-3" alt="">
+                        <h3 class="card-title mb-3">
+                            John Doe
+                        </h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Nam cupiditate assumenda aliquid asperiores accusantium explicabo, autem dignissimos eos dolores incidunt? 
+                            Rerum rem quos numquam, quisquam nihil optio aperiam facere molestiae?
+                        </p>
+                        <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact form -->
+
+    <section class="p-5">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-md">
+              <h2 class="text-center mb-4">Contact Info</h2>
+              <ul class="list-group list-group-flush lead">
+                <li class="list-group-item">
+                  <span class="fw-bold">Main Location:</span> 50 Main st Boston MA
+                </li>
+                <li class="list-group-item">
+                  <span class="fw-bold">Enrollment Phone:</span> (555) 555-5555
+                </li>
+                <li class="list-group-item">
+                  <span class="fw-bold">Student Phone:</span> (333) 333-3333
+                </li>
+                <li class="list-group-item">
+                  <span class="fw-bold">Enrollment Email:</span> (555)
+                  enroll@frontendbc.test
+                </li>
+                <li class="list-group-item">
+                  <span class="fw-bold">Student Email:</span>
+                  student@frontendbc.test
+                </li>
+              </ul>
+            </div>
+            <div class="col-md">
+              <div id="map"></div>
+            </div>
+          </div>
+        </div>
+    
+    
+    </section>
+
+    <!-- Footers -->
+
+    <footer class="p-5 bg-dark text-center text-light position-relative">
+        <div class="container">
+            <p class="lead">
+                Copyright &copy; 2021
+            </p>
+            <a class="position-absolute bottom-0 end-0 p-5" href="#">
+                <i class="bi bi-arrow-up-circle h1">
+
+                </i>
+            </a>
+        </div>
+    </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" 
     crossorigin="anonymous"></script>
+    <script>
+        mapboxgl.accessToken =
+          'pk.eyJ1IjoiYnRyYXZlcnN5IiwiYSI6ImNrbmh0dXF1NzBtbnMyb3MzcTBpaG10eXcifQ.h5ZyYCglnMdOLAGGiL1Auw'
+        var map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/mapbox/streets-v11',
+          center: [-71.060982, 42.35725],
+          zoom: 18,
+        })
+      </script>
 </body>
 </html>
